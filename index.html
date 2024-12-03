@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta author="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script type="module" src="./src/index.js"></script>
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+    <header-component>
+        <featured-news-component slot="header-top-bar"></featured-news-component>
+        <editorials-component slot="header-top-bar"></editorials-component>
+        <dropdown-menu-component slot="header-main-bar"></dropdown-menu-component>
+        <logo-component slot="header-main-bar"></logo-component>
+        <user-area-component slot="header-main-bar"></user-area-component>
+        <main-menu-component slot="header-bot-bar"></main-menu-component>
+    </header-component>
+    <main-component>
+        <ad-banner-component image="./img/ad-banner-one.webp" width="100%"></ad-banner-component>
+        <news-component>
+            <row-component>
+                <new-component image="./img/0.webp" category="TRIBUNALES" title="Más de 40.000 funcionarios cobrarán unos 2.000 euros extra tras anulares la congelación de sus sueldos." description="El Govern propone pagar esta deuda a plazos durante los próximos cinco años." author="Nekane Domblás"></new-component>
+            </row-component>
+            <row-component> 
+                <new-component image="./img/1.webp" category="LOCAL" title="Norma Duval declara en Inca como testigo por un accidente laboral en su casa." description="" author="Víctor Malagón"></new-component>
+                <new-component image="./img/2.webp" category="SUCESOS" title="Fallece un turista coreano mientras realizaba snorkel cerca des Caló des Moro." description="" author="Juan P. Martínez"></new-component>
+            </row-component>
+        </news-component>
+        <ad-banner-component image="./img/ad-banner-two.webp" width="25%"></ad-banner-component>
+        <ad-banner-component image="./img/ad-banner-three.gif" width="25%"></ad-banner-component>
+        <news-component>
+            <row-component>
+                <new-component image="./img/3.webp" category="LOCAL" title="Prohens defiende en bruselas reindustrializar Baleares para reducir su dependencia turística." description="" author="Kike Oñate"></new-component>
+                <new-component image="./img/4.webp" category="BRANDED CONTENT" title="Oportunidad de inversión para el nuevo Proyecto Solar Son Castelló." description="" author="Redacción Monográficos"></new-component>
+                <new-component image="./img/5.webp" category="VIVIENDA" title="El alquiler de temporada se dispara en Palma para 'burlar' la ley." description="" author="Alicia Mateos"></new-component>
+            </row-component>
+        </news-component>
+    </main-component>
+</body>
